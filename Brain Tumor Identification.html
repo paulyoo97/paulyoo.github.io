@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Convolutional Neural Network</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="code.html">Code</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/paul-yoo97/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/paulyoo97" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Convolutional Neural Network</h1>
+									<p>Brain Tumor Identification</p>
+								</header>
+
+								<!-- Text stuff -->
+									<h2>Context</h2>
+									<p>Using Python's TensorFlow and Keras libraries, a convolutional neural network model was developed to predict
+									and identify the existence of brain tumors. The model was trained using a dataset consisting of MRI scans on three thousand brains.
+									The images below on the left and right are examples of brains with and without a tumor, respectively.</p>
+
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="images/y0.jpg" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="images/no0.jpg" alt="" /></span></div>
+										</div>
+									</div>
+
+									<h2>Initial Model Results</h2>
+									<p>The initial CNN model was built using a linear stack of layers consisting of Conv2D, MaxPool2D, Flatten,
+									and Dense layers which resulted in a total of 1605634 parameters. After compiling and training the model,
+									we get the following results regarding loss and accuracy:
+									</p>
+
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Epoch</th>
+													<th>Loss</th>
+													<th>Accuracy</th>
+													<th>Validation Loss</th>
+													<th>Validation Accuracy</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td> 1/20</td>
+													<td>14.1018</td>
+													<td>0.8115</td>
+													<td>0.7651</td>
+													<td>0.9100</td>
+												</tr>
+												<tr>
+													<td>20/20</td>
+													<td>7.2441e-06</td>
+													<td>1.0</td>
+													<td>0.2781</td>
+													<td>0.9700</td>
+												</tr>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+									<p>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/loss performance.png" alt="" /></span></div>
+												<div class="col-6"><span class="image fit"><img src="images/accuracy performance.png" alt="" /></span></div>
+											</div>
+										</div>
+									</p>
+									<p>
+										Based on the results, both the loss and accuracy plots demonstrate convergence. The loss plot converged towards 0
+										and the accuracy converged close to 1, which are both trends indicating improvement in the model.
+									</p>
+
+									<h2>Model Performance</h2>
+									<p>
+									To finalize this project, the model was provided with test data to determine the model's prediction capabilities.
+									Below is a confusion matrix demonstrating the model's ability to predict if a brain tumor does or does not exist.
+									<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/confusion matrix.png" alt="" /></span></div>
+											</div>
+										</div>
+									We can see from the dark blue regions of the confusion matrix that 381 out of 400 correct predictions were made.
+									This means that about 95% of the time the model is able to correctly diagnosis the presence of tumor.
+									Though such accuracy is an encouraging result, a greater accuracy would be required if it were to be deployed in the healthcare industry.
+									</p>
+
+									<h2>References</h2>
+									<p>
+									Data is from <a href="https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection">here</a><br />
+									<a href='https://github.com/paulyoo97/DataScience/blob/main/Brain%20Tumor%20Identifer%20grayscale.ipynb'>Jupyter Notebook</a>
+									</p>
+							</section>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section class="alt">
+							<div class="row" style="display: flex; justify-content: center;">
+								<div>
+									<h3 style="text-align:center">Phone</h3>
+										<p style="text-align:center">647-924-4197</p>	
+								</div>
+								<div>
+									<h3 style="text-align:center">Email</h3>
+										<p style="text-align:center">yooj1@mcmaster.ca<br />
+										paulyoo97@outlook.com</p>	
+								</div>
+								<div>
+									<h3 style="text-align:center">Social</h3>
+									<ul class="icons alt">
+										<li><a href="https://www.linkedin.com/in/paul-yoo97/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/paulyoo97" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+								</div>
+						</section>
+				</footer>
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Paul Yoo</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Extracting Financial Data</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="code.html">Code</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/paul-yoo97/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Extracting Financial<br/>Data</h1>
+									<p>Student Expenses</p>
+								</header>
+
+								<!-- Text stuff -->
+									<h2>Context</h2>
+									<p>This project was created to observe and identify the type of expenses that required improved budgeting.
+									Using python, tabular data from monthly PDF bank statements sent by TD Bank were extracted, transformed, and preprocessed into dataframes.
+									The dataframes for each year were then exported and loaded to Microsoft Excel files- with sheets corresponding to each month-
+									to further visualize and study expenses. Macros were created in Excel to automate these tasks.
+									Finally, the data was summarized and evaluated by comparing the expenses of 2021 and 2022 in order to identify expenses
+									that required improved budgeting.
+									</p>
+
+									<h2>Results*</h2>
+									During the preprocessing phase in Excel, expenses were categorized into seven categories: saving, leisure, giving, subscription,
+									consumption, gas, and fees. Once completed, each month's expenses were automated and visualized as tables and plots as oberserved in the sample figures below:<br/>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Category</th>
+													<th>Amount</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Saving</td>
+													<td>312.50</td>
+												</tr>
+												<tr>
+													<td>Leisure</td>
+													<td>115.92</td>
+												</tr>
+												<tr>
+													<td>Giving</td>
+													<td>150.00</td>
+												</tr>
+												<tr>
+													<td>Subscription</td>
+													<td>29.03</td>
+												</tr>
+												<tr>
+													<td>Consumption</td>
+													<td>182.70</td>
+												</tr>
+												<tr>
+													<td>Gas</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>Fee</td>
+													<td>585.16</td>
+												</tr>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="images/expenses per category.png" /></span></div>
+										</div>
+									</div>
+									The expenses were then summarized and evaluated by comparing categorical expenses of year 2021 and 2022.
+									A table and plot comparing the values were created to observe the comparison.
+									<p>
+									</p>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Categories</th>
+													<th>2021 Expenses</th>
+													<th> 2022 Expenses</th>
+													<th>Comparisons</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Saving</td>
+													<td>5155.00</td>
+													<td>5221.00</td>
+													<td>1%</td>
+												</tr>
+												<tr>
+													<td><b>Leisure</b></td>
+													<td><b>1192.46</b></td>
+													<td><b>1366.81</b></td>
+													<td><b>15%</b></td>
+												</tr>
+												<tr>
+													<td>Giving</td>
+													<td>1800.00</td>
+													<td>1800.00</td>
+													<td>0%</td>
+												</tr>
+												<tr>
+													<td>Subscription</td>
+													<td>630.69</td>
+													<td>657.31</td>
+													<td>4%</td>
+												</tr>
+												<tr>
+													<td><b>Consumption</b></td>
+													<td><b>1929.33</b></td>
+													<td><b>2249.37</b></td>
+													<td><b>17%</b></td>
+												</tr>
+												<tr>
+													<td>Gas</td>
+													<td>1043.09</td>
+													<td>717.92</td>
+													<td>-31%</td>
+												</tr>
+												<tr>
+													<td>Fee</td>
+													<td>14308.53</td>
+													<td>14870.99</td>
+													<td>4%</td>
+												<tr>
+													<td>Total</td>
+													<td>26059.10</td>
+													<td>26883.40</td>
+													<td>3%</td>
+												</tr>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/21-22 expenses per category.png"/></span></div>
+											</div>
+										</div>
+									</p>
+									<i>*Note: numbers within sample figures were modified for demonstration and privacy purposes.
+									However, the conclusion remains the same with the original data.</i>
+									<p>
+									</p>
+
+									<h2>Conclusion</h2>
+									<p>
+									Based on the comparison on categorical expenses, areas where improved budgeting would be required are leisure and consumption.
+									Although most expenses have been from fees, as the student has graduated this year, fees are projected to significantly
+									reduce as tuition and rent are no longer expenses for 2023.
+									</p>
+
+									<h2>References</h2>
+									<p>
+									<a href='https://github.com/paulyoo97/DataScience/blob/main/TD%20Expenses%20Extraction.ipynb'>Jupyter Notebook</a>
+									</p>
+							</section>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section class="alt">
+							<div class="row" style="display: flex; justify-content: center;">
+								<div>
+									<h3 style="text-align:center">Phone</h3>
+										<p style="text-align:center">647-924-4197</p>	
+								</div>
+								<div>
+									<h3 style="text-align:center">Email</h3>
+										<p style="text-align:center">yooj1@mcmaster.ca<br />
+										paulyoo97@outlook.com</p>	
+								</div>
+								<div>
+									<h3 style="text-align:center">Social</h3>
+									<ul class="icons alt">
+										<li><a href="https://www.linkedin.com/in/paul-yoo97/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/paulyoo97" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+								</div>
+						</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Paul Yoo</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

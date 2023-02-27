@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Stock Prediction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="code.html">Code</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/paul-yoo97/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/paulyoo97" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Stock Prediction: "AAPL"</h1>
+									<p>Apple Stock</p>
+								</header>
+
+								<!-- Text stuff -->
+									<h2>Context</h2>
+									<p>This project's focus was to predict an Apple Stock's closing price. The market data was extracted from Yahoo! Finance's API as a dataframe.
+									The dataframe was then transformed into arrays and normalized using the sk-learn library before being utilized for the model's training, testing, and validation phases.
+									Below you can see the real world trend of the Apple stock's closing price between January 1,2012 to December 18,2019.</p>
+
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="images/closing price history.png" width="370" height="370"alt="" /></span></div>
+										</div>
+									</div>
+
+									<h2>Model Results</h2>
+									<p>The machine learning model was created using the Sequential model with LSTM and Dense layers. After compiling and training the model,
+									the model had a root mean squared error (RMSE) loss of 7.6093e-04. Once trained, the model predictions were generated which had a RMSE loss of about 0.23.
+									Finally, the predicted trend was then plotted along with the real world trend to visualize and validate our observation.
+									</p>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/closing price history predictions.png" width="370" height="370"alt="" /></span></div>
+											</div>
+										</div>
+									</p>
+									<p>
+									</p>
+
+									<h2>Model Performance</h2>
+									<p>
+									To validate the model, the closing stock price of December 18,2019 was determined. The predicted value was about $67.11
+									while the true value was $69.93. This means the prediction has an accuray of about 96%.
+									</p>
+
+									<h2>References</h2>
+									<p>
+									Data is from <a href="https://finance.yahoo.com/quote/AAPL/">here</a><br />
+									<a href='https://github.com/paulyoo97/DataScience/blob/main/Predicting%20Stock%20Price.ipynb'>Jupyter Notebook</a>
+									</p>
+							</section>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section class="alt">
+							<div class="row" style="display: flex; justify-content: center;">
+								<div>
+									<h3 style="text-align:center">Phone</h3>
+										<p style="text-align:center">647-924-4197</p>	
+								</div>
+								<div>
+									<h3 style="text-align:center">Email</h3>
+										<p style="text-align:center">yooj1@mcmaster.ca<br />
+										paulyoo97@outlook.com</p>	
+								</div>
+								<div>
+									<h3 style="text-align:center">Social</h3>
+									<ul class="icons alt">
+										<li><a href="https://www.linkedin.com/in/paul-yoo97/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/paulyoo97" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+								</div>
+						</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Paul Yoo</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
